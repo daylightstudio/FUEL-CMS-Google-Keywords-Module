@@ -75,8 +75,20 @@ class Fuel_google_keywords extends Fuel_advanced_module {
 		$this->set_params($this->_config);
 	}
 	
-	// returns an array with the keywords being the key and the value being a comma separated value of the rankings
-	function results($params)
+	// 
+	// --------------------------------------------------------------------
+	
+	/**
+	 * Returns an array with the keywords being the key and the value being a comma separated value of the rankings
+	 *
+	 * Accepts an associative array as input, containing backup preferences.
+	 * Also will set the values in the config as properties of this object
+	 *
+	 * @access	public
+	 * @param	array	sets the class properties of $domain, $keywords, $num_results, $additional_params (optional)
+	 * @return	void
+	 */	
+	function results($params  = array())
 	{
 		$this->CI->load->module_helper(FUEL_FOLDER, 'scraper');
 		$this->set_params($params);
