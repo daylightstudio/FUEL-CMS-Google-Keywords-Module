@@ -12,7 +12,7 @@
 			<?=$this->form->text('keywords', $keywords, 'size="30"')?>
 		<?php } ?>
 	</div>
-	<div class="float_left btn" style="margin: -1px 0 0 10px;">
+	<div class="float_left" style="margin: -1px 0 0 10px;">
 	
 		<?=$this->form->submit(lang('btn_submit_keywords'), 'submit_keywords')?>
 	</div>				
