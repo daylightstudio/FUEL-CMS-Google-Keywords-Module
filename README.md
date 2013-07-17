@@ -1,5 +1,6 @@
 # GOOGLE KEYWORDS MODULE FOR FUEL CMS
-This is a [FUEL CMS](http://www.getfuelcms.com) google_keywords module for adding google_keywords like functionality including posts, categories, and commenting.
+This is a [FUEL CMS](http://www.getfuelcms.com) campaign_monitor module can be used to track your Google search engine rankings for given keywords.
+
 
 ## INSTALLATION
 There are a couple ways to install the module. If you are using GIT you can use the following method
@@ -34,7 +35,7 @@ To uninstall the module which will remove any permissions and database informati
 
 
 ## DOCUMENTATION
-To access the documentation, you can visit it [here](http://www.getfuelcms.com/user_guide/modules/google_keywords).
+To access the documentation, you can visit it [here](http://docs.getfuelcms.com/modules/google_keywords).
 
 ## TEAM
 * David McReynolds, Daylight Studio, Main Developer
