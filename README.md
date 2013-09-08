@@ -17,7 +17,7 @@ Type in:
 
 ### MANUAL
 1. Download the zip file from GitHub:
-[https://github.com/daylightstudio/FUEL-CMS-Google-Keywords-Module](https://github.com/daylightstudio/FUEL-CMS-google_keywords-Module)
+[https://github.com/daylightstudio/FUEL-CMS-Google-Keywords-Module](https://github.com/daylightstudio/FUEL-CMS-Google-Keywords-Module)
 
 2. Create a "google_keywords" folder in fuel/modules/ and place the contents of the google_keywords module folder in there.
 
