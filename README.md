@@ -7,7 +7,7 @@ There are a couple ways to install the module. If you are using GIT you can use 
 to create a submodule:
 
 ### USING GIT
-1. Open up a Terminal window, "cd" to your FUEL CMS installation then type type in: 
+1. Open up a Terminal window, "cd" to your FUEL CMS installation then type in: 
 Type in:
 ``php index.php fuel/installer/add_git_submodule git://github.com/daylightstudio/FUEL-CMS-Google-Keywords-Module.git google_keywords``
 
@@ -21,7 +21,7 @@ Type in:
 
 2. Create a "google_keywords" folder in fuel/modules/ and place the contents of the google_keywords module folder in there.
 
-3. Then to install, open up a Terminal window, "cd" to your FUEL CMS installation then type type in:
+3. Then to install, open up a Terminal window, "cd" to your FUEL CMS installation then type tin:
 ``php index.php fuel/installer/install google_keywords``
 
 ## UNINSTALL
