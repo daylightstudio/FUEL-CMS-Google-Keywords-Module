@@ -113,7 +113,7 @@ class Fuel_google_keywords extends Fuel_advanced_module {
 		{
 			$keyword = trim($keyword);
 			
-			$url = 'http://www.google.com/search?q='.rawurlencode($keyword).'&num='.$this->num_results.'&'.http_build_query($this->additional_params);
+			$url = 'https://www.google.com/search?q='.rawurlencode($keyword).'&num='.$this->num_results.'&'.http_build_query($this->additional_params);
 
 			// scrape html from page running on localhost
 			$google_page = scrape_html($url);
