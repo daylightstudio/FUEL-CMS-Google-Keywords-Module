@@ -1,5 +1,5 @@
 # GOOGLE KEYWORDS MODULE FOR FUEL CMS
-This is a [FUEL CMS](http://www.getfuelcms.com) campaign_monitor module can be used to track your Google search engine rankings for given keywords.
+This is a [FUEL CMS](http://www.getfuelcms.com) google_keywords module can be used to track your Google search engine rankings for given keywords.
 
 
 ## INSTALLATION
