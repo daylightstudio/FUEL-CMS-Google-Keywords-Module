@@ -36,7 +36,7 @@ class Fuel_google_keywords extends Fuel_advanced_module {
 	public $additional_params = array();
 	
 	/**
-	 * Constructor - Sets Fuel_backup preferences
+	 * Constructor - Sets Fuel_google_keywords preferences
 	 *
 	 * The constructor can be passed an array of config values
 	 */
@@ -60,9 +60,9 @@ class Fuel_google_keywords extends Fuel_advanced_module {
 	// --------------------------------------------------------------------
 	
 	/**
-	 * Initialize the backup object
+	 * Initialize the object
 	 *
-	 * Accepts an associative array as input, containing backup preferences.
+	 * Accepts an associative array as input, containing preferences.
 	 * Also will set the values in the config as properties of this object
 	 *
 	 * @access	public
@@ -81,7 +81,7 @@ class Fuel_google_keywords extends Fuel_advanced_module {
 	/**
 	 * Returns an array with the keywords being the key and the value being a comma separated value of the rankings
 	 *
-	 * Accepts an associative array as input, containing backup preferences.
+	 * Accepts an associative array as input, containing preferences.
 	 * Also will set the values in the config as properties of this object
 	 *
 	 * @access	public
