@@ -3,7 +3,7 @@
 	<ul class="nobullets">
 	<?php foreach($results as $keyword => $found){ ?>
 			<li><a href="http://www.google.com/search?q=<?=rawurlencode($keyword)?>&num=<?=$this->config->item('keyword_google_num_results', FUEL_FOLDER)?>" target="_blank"><strong class="success"><?=$keyword?></strong></a> 
-				<?=pluralize(count($found), lang('seo_google_keywords_ranking'))?>: <?=$found?>
+				<?=pluralize(count($found), lang('seo_google_keywords_ranking'))?>: <?=implode(', ', $found)?>
 			</li>
 	<?php } ?>
 	</ul>

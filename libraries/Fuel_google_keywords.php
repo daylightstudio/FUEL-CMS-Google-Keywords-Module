@@ -117,17 +117,19 @@ class Fuel_google_keywords extends Fuel_advanced_module {
 
 			// scrape html from page running on localhost
 			$google_page = scrape_html($url);
-			preg_match_all('|<h3 class=(["\'])?r\\1?><a.+href="(.+)".+</h3>|Umis', $google_page, $matches);
 
+			// OLD
+			/*preg_match_all('|<h3 class=(["\'])?r\\1?><a.+href="(.+)".+</h3>|Umis', $google_page, $matches);*/
+			preg_match_all('|<cite.+>(.+)</cite>|Umis', $google_page, $matches);
 			// echo "<pre style=\"text-align: left;\">";
 			// print_r($matches);
 			// echo "</pre>";
 			// exit();
 			
 			$results = array();
-			if (!empty($matches[2]))
+			if (!empty($matches[1]))
 			{
-				$results = $matches[2];
+				$results = $matches[1];
 			}
 
 			$num = 1;
@@ -142,10 +144,6 @@ class Fuel_google_keywords extends Fuel_advanced_module {
 					$found[$keyword][] = $num;
 				}
 				$num++;
-			}
-			if (!empty($found[$keyword]))
-			{
-				$found[$keyword] = implode(', ', $found[$keyword]);
 			}
 		}
 		curl_close($ch);

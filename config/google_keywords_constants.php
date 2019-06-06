@@ -1,4 +1,4 @@
 <?php 
-define('GOOGLE_KEYWORDS_VERSION', '1.0');
+define('GOOGLE_KEYWORDS_VERSION', '1.0.1');
 define('GOOGLE_KEYWORDS_FOLDER', 'google_keywords');
 define('GOOGLE_KEYWORDS_PATH', MODULES_PATH.GOOGLE_KEYWORDS_FOLDER.'/');
