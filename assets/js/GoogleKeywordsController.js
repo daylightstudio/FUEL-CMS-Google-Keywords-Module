@@ -6,9 +6,11 @@ GoogleKeywordsController = jqx.createController(fuel.controller.BaseFuelControll
 	google_keywords : function(initObj){
 		this._submit();
 		this.notifications();
+		
 		var _this = this;
 		var options = { 
 			beforeSubmit: function(){
+				$('#csrf_test_name').val($.cookie('csrf_cookie_name'));
 				$('#keyword_loader').show();
 			},
 			success: function(html){
@@ -22,6 +24,7 @@ GoogleKeywordsController = jqx.createController(fuel.controller.BaseFuelControll
 			
 		};
 		$('#form').ajaxForm(options);
+
 		$('#submit_google_keywords').click(function(){
 			$('#form').submit();
 			return false;
